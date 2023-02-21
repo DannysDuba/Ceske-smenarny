@@ -207,7 +207,7 @@ def main():
     print('-' * 170)
 
     sorted_prices = sorted(prices, key=lambda x: x[1])
-    print(f'Nejnižší cenu má směnárna {sorted_prices[0][0]} cena: {sorted_prices[0][1]} + poplatky')
+    print(f'Nejnižší cenu za 1 BTC má směnárna {sorted_prices[0][0]} cena: {sorted_prices[0][1]} + poplatky')
 
     difference = float(sorted_prices[-1][1]) - float(sorted_prices[0][1])
     print(f'Rozdíl mezi nejdražší směnárnou {sorted_prices[-1][0]} '
